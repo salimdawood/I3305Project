@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="660.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LibraryManagementSystem.Controller.LibrarianBarrowBookController">
+   <TableView fx:id="tbl_borrow" layoutX="32.0" layoutY="14.0" prefHeight="430.0" prefWidth="684.0">
+      <columns>
+         <TableColumn fx:id="col_book_id" prefWidth="220.0" text="Book ID" />
+         <TableColumn fx:id="col_user_id" prefWidth="220.0" text="User ID" />
+         <TableColumn fx:id="col_time" prefWidth="220.0" text="Borrow Date" />
+      </columns>
+   </TableView>
+   <VBox layoutX="33.0" layoutY="533.0" prefHeight="95.0" prefWidth="312.0" spacing="10.0">
+      <TextField id="list_text" fx:id="text_user_id" promptText="User Id">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField id="list_text" fx:id="text_book_id" promptText="Book Id">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+   </VBox>
+   <Button id="list_button" layoutX="33.0" layoutY="464.0" mnemonicParsing="false" onMouseClicked="#addBorrow" prefHeight="39.0" prefWidth="312.0" text="Add borrow process" textFill="#436dfb">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Button>
+   <Button id="list_button" layoutX="405.0" layoutY="464.0" mnemonicParsing="false" onMouseClicked="#deleteBorrow" prefHeight="39.0" prefWidth="312.0" text="Delete borrow process" textFill="#436dfb">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Button>
+</AnchorPane>

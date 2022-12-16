@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LibraryManagementSystem.Controller.AdminProblemsController">
+    <Button id="list_button" layoutX="34.0" layoutY="524.0" mnemonicParsing="false" onMouseClicked="#removeProblem" prefHeight="39.0" prefWidth="672.0" text="Delete the suggestion from the database if you reviewed it" textFill="#436dfb">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Button>
+    <TableView fx:id="tbl_problem" layoutX="11.0" layoutY="14.0" prefHeight="463.0" prefWidth="719.0">
+      <columns>
+          <TableColumn fx:id="col_problem" prefWidth="691.0" text="Suggestions by our users" />
+      </columns>
+    </TableView>
+</AnchorPane>

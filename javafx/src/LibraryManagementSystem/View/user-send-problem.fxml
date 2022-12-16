@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LibraryManagementSystem.Controller.UserSendProblemController">
+   <Button layoutX="53.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#sendProblem" prefHeight="56.0" prefWidth="634.0" styleClass="bug_button" text="Send your problems and suggestion " textFill="#436dfb">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Button>
+   <TextArea fx:id="text_problem" layoutX="53.0" layoutY="130.0" prefHeight="485.0" prefWidth="634.0" promptText="Type your problems or suggestions here.It will be viewed only by the admin.(maximum 200 characters)" styleClass="bug_list">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </TextArea>
+</AnchorPane>

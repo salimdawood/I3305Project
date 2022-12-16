@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.SVGPath?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1380.0" styleClass="body" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LibraryManagementSystem.Controller.UserContainerController">
+    <GridPane hgap="10.0" layoutX="134.0" layoutY="124.0" styleClass="container" vgap="10.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="800.0" AnchorPane.topAnchor="50.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <AnchorPane onMouseClicked="#viewSearch" prefHeight="200.0" prefWidth="200.0" styleClass="search" GridPane.columnSpan="5" GridPane.rowSpan="5">
+            <SVGPath content="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="WHITE" layoutX="77.0" layoutY="100.0" scaleX="5.0" scaleY="5.0" stroke="WHITE" strokeWidth="0.0" styleClass="search-icon" />
+        </AnchorPane>
+        <AnchorPane onMouseClicked="#darkTheme" prefHeight="200.0" prefWidth="200.0" styleClass="dark-mode" GridPane.columnIndex="5" GridPane.columnSpan="5" GridPane.rowSpan="5">
+            <SVGPath fx:id="go_dark" content="M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36c-0.98,1.37-2.58,2.26-4.4,2.26 c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z" fill="WHITE" layoutX="78.0" layoutY="102.0" scaleX="5.0" scaleY="5.0" />
+            <SVGPath fx:id="go_light" content="M 12 7 c -2.76 0 -5 2.24 -5 5 s 2.24 5 5 5 s 5 -2.24 5 -5 S 14.76 7 12 7 L 12 7 Z M 2 13 l 2 0 c 0.55 0 1 -0.45 1 -1 s -0.45 -1 -1 -1 l -2 0 c -0.55 0 -1 0.45 -1 1 S 1.45 13 2 13 Z M 20 13 l 2 0 c 0.55 0 1 -0.45 1 -1 s -0.45 -1 -1 -1 l -2 0 c -0.55 0 -1 0.45 -1 1 S 19.45 13 20 13 Z M 11 2 v 2 c 0 0.55 0.45 1 1 1 s 1 -0.45 1 -1 V 2 c 0 -0.55 -0.45 -1 -1 -1 S 11 1.45 11 2 Z M 11 20 v 2 c 0 0.55 0.45 1 1 1 s 1 -0.45 1 -1 v -2 c 0 -0.55 -0.45 -1 -1 -1 C 11.45 19 11 19.45 11 20 Z M 5.99 4.58 c -0.39 -0.39 -1.03 -0.39 -1.41 0 c -0.39 0.39 -0.39 1.03 0 1.41 l 1.06 1.06 c 0.39 0.39 1.03 0.39 1.41 0 s 0.39 -1.03 0 -1.41 L 5.99 4.58 Z M 18.36 16.95 c -0.39 -0.39 -1.03 -0.39 -1.41 0 c -0.39 0.39 -0.39 1.03 0 1.41 l 1.06 1.06 c 0.39 0.39 1.03 0.39 1.41 0 c 0.39 -0.39 0.39 -1.03 0 -1.41 L 18.36 16.95 Z M 19.42 5.99 c 0.39 -0.39 0.39 -1.03 0 -1.41 c -0.39 -0.39 -1.03 -0.39 -1.41 0 l -1.06 1.06 c -0.39 0.39 -0.39 1.03 0 1.41 s 1.03 0.39 1.41 0 L 19.42 5.99 Z M 7.05 18.36 c 0.39 -0.39 0.39 -1.03 0 -1.41 c -0.39 -0.39 -1.03 -0.39 -1.41 0 l -1.06 1.06 c -0.39 0.39 -0.39 1.03 0 1.41 s 1.03 0.39 1.41 0 L 7.05 18.36 Z" fill="WHITE" layoutX="78.0" layoutY="102.0" scaleX="5.0" scaleY="5.0" visible="false" />
+        </AnchorPane>
+        <AnchorPane layoutX="140.0" layoutY="147.0" onMouseClicked="#viewRandomBook" prefHeight="200.0" prefWidth="200.0" styleClass="book" GridPane.columnIndex="10" GridPane.columnSpan="5" GridPane.rowSpan="5">
+            <SVGPath content="M19 9l1.25-2.75L23 5l-2.75-1.25L19 1l-1.25 2.75L15 5l2.75 1.25L19 9zm-7.5.5L9 4 6.5 9.5 1 12l5.5 2.5L9 20l2.5-5.5L17 12l-5.5-2.5zM19 15l-1.25 2.75L15 19l2.75 1.25L19 23l1.25-2.75L23 19l-2.75-1.25L19 15z" fill="WHITE" layoutX="78.0" layoutY="102.0" scaleX="5.0" scaleY="5.0" />
+        </AnchorPane>
+        <AnchorPane layoutX="10.0" layoutY="10.0" onMouseClicked="#viewProblem" prefHeight="200.0" prefWidth="200.0" styleClass="problem" GridPane.columnSpan="5" GridPane.rowIndex="5" GridPane.rowSpan="5">
+            <SVGPath content="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4zM20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z" fill="WHITE" layoutX="78.0" layoutY="101.0" scaleX="5.0" scaleY="5.0" />
+        </AnchorPane>
+        <AnchorPane layoutX="140.0" layoutY="147.0" onMouseClicked="#closeOption" prefHeight="200.0" prefWidth="200.0" styleClass="sign-out" GridPane.columnIndex="5" GridPane.columnSpan="5" GridPane.rowIndex="5" GridPane.rowSpan="5">
+            <SVGPath content="M13 3h-2v10h2V3zm4.83 2.17l-1.42 1.42C17.99 7.86 19 9.81 19 12c0 3.87-3.13 7-7 7s-7-3.13-7-7c0-2.19 1.01-4.14 2.58-5.42L6.17 5.17C4.23 6.82 3 9.26 3 12c0 4.97 4.03 9 9 9s9-4.03 9-9c0-2.74-1.23-5.18-3.17-6.83z" fill="WHITE" layoutX="78.0" layoutY="102.0" scaleX="5.0" scaleY="5.0" />
+        </AnchorPane>
+    </GridPane>
+    <BorderPane fx:id="main_pain_screen" layoutX="980.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" styleClass="view_box" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="600.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="50.0" />
+</AnchorPane>

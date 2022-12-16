@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="660.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LibraryManagementSystem.Controller.AdminAddLibrarianController">
+    <TableView fx:id="tbl_librarian" editable="true" layoutX="40.0" layoutY="14.0" prefHeight="338.0" prefWidth="661.0">
+      <columns>
+          <TableColumn fx:id="col_id" prefWidth="215.0" text="librarian id" />
+          <TableColumn fx:id="col_name" prefWidth="215.0" text="librarian name" />
+          <TableColumn fx:id="col_phone" prefWidth="215.0" text="phone number" />
+      </columns>
+    </TableView>
+    <Button id="list_button"  layoutX="415.0" layoutY="382.0" mnemonicParsing="false" onMouseClicked="#RemoveLibrarian" prefHeight="39.0" prefWidth="293.0" text="Remove Librarian" textFill="#436dfb">
+      <font>
+         <Font size="18.0" />
+      </font></Button>
+    <Button id="list_button" layoutX="40.0" layoutY="382.0" mnemonicParsing="false" onMouseClicked="#AddLibrarian" prefHeight="39.0" prefWidth="293.0" text="Add Librarian" textFill="#436dfb">
+      <font>
+         <Font size="18.0" />
+      </font></Button>
+    <VBox layoutX="40.0" layoutY="455.0" spacing="15.0">
+        <TextField id="list_text" fx:id="text_id" prefHeight="39.0" prefWidth="293.0" promptText="ID">
+          <font>
+              <Font size="18.0"/>
+          </font>
+        </TextField>
+        <TextField id="list_text" fx:id="text_name" prefHeight="39.0" prefWidth="293.0" promptText="Name">
+          <font>
+              <Font size="18.0"/>
+          </font>
+        </TextField>
+        <TextField id="list_text" fx:id="text_phone" prefHeight="39.0" prefWidth="293.0" promptText="Phone">
+          <font>
+              <Font size="18.0"/>
+          </font>
+        </TextField>
+    </VBox>
+</AnchorPane>
